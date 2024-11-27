@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Global Styles*/
@@ -82,6 +83,7 @@ nav {
     background-color: #ffffff;
     max-width: 100%;
     height: 20%;
+    scroll-margin-top: 20vh;
 }
 
 #about-me-card {
