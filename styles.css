@@ -1,0 +1,175 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles*/
+
+:root {
+    /* Colors */
+    --primary-color: #4a8196;
+    --secondary-color: #191923;
+    --tertiary-color: <!-- ? -->;
+    /* Typography */
+    --large-text: 2.5em;
+    /* Spacing */
+    /* Rando */
+    --card-background: .75rem .75rem 6px rgba(0, 0, 0, 0.3);
+    --card-corners: 10px
+}
+
+body {
+    height: 300vh;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    font-family: monospace;
+}
+
+p {
+    text-align: center;
+}
+
+.header-primary {
+    text-align: center;
+    font-size: var(--large-text);
+}
+
+.header-secondary {
+    color: #ffffff;
+    text-align: center;
+    font-size: var(--large-text);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar-text {
+    font-size: .85rem;
+    text-align: center;
+}
+
+/* Components */
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    outline: 1.25px solid #000000;
+}
+
+/* Layouts */
+
+#main-page-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 300vh;
+    padding-top: 10vh;
+}
+
+.card {
+    border-radius: var(--card-corners);
+    box-shadow: var(--card-background);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #ffffff;
+    max-width: 100%;
+    height: 20%;
+}
+
+#about-me-card {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#about-me-card__headshot-and-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#headshot {
+    max-width: 50vw;
+    max-height: 40vh;
+    object-fit: contain;
+    border-radius: var(--card-corners);
+}
+
+#about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+#logos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#certificates-card {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-radius: var(--card-corners);
+    box-shadow: var(--card-background);
+}
+
+#certificate-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    overflow-x: scroll;
+    height: 50%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.image {
+    width: 75%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+#ribbon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #0016a8;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    outline: 1.25px solid #000000;
+}
+
+#certificates-card__label {
+
+}
+
+#projects-completed-card {
+
+}
+
+#works-in-progress-card {
+
+}
+
+/* Pages */
